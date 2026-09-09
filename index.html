@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Uma carta para você</title>
-    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
 
-    <div class="container">
+    <main class="container">
 
         <div class="cadeado" id="cadeado">
             🔒
@@ -30,7 +33,7 @@
                 autocomplete="off"
             >
 
-            <button onclick="verificarSenha()">
+            <button type="button" onclick="verificarSenha()">
                 Abrir
             </button>
 
@@ -38,13 +41,14 @@
 
         <p id="mensagem"></p>
 
-        <a href="enigma.html" class="link-enigma">
+        <a href="./enigma.html" class="link-enigma">
             Talvez a resposta esteja em algum lugar...
         </a>
 
-    </div>
+    </main>
 
-    <script src="js/carta.js"></script>
+    <script src="./js/carta.js"></script>
 
 </body>
+
 </html>
