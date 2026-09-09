@@ -141,3 +141,98 @@ button:hover {
     }
 
 }
+
+.erro {
+    animation: erro 0.5s;
+}
+
+.desbloqueando {
+    animation: desbloquear 1.5s forwards;
+}
+
+@keyframes erro {
+    0%, 100% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-10px);
+    }
+
+    75% {
+        transform: translateX(10px);
+    }
+}
+
+@keyframes desbloquear {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    to {
+        opacity: 0;
+        transform: scale(1.1);
+        filter: blur(10px);
+    }
+}
+
+.carta {
+    width: 90%;
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 50px;
+
+    background: rgba(40, 32, 27, 0.95);
+
+    border: 1px solid #806b55;
+    border-radius: 15px;
+
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
+
+    animation: aparecer 1.5s ease;
+}
+
+.texto {
+    margin-top: 30px;
+    line-height: 1.8;
+}
+
+.texto p {
+    margin-bottom: 20px;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+
+    margin-top: 35px;
+}
+
+.galeria img {
+    width: 100%;
+    height: 180px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+
+    transition: 0.4s;
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+
+    .carta {
+        padding: 30px 20px;
+    }
+
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+
+}
