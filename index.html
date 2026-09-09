@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uma carta para você</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="cadeado" id="cadeado">
+            🔒
+        </div>
+
+        <h1>Uma carta foi deixada aqui...</h1>
+
+        <p class="descricao">
+            Mas parece que ela está protegida.
+        </p>
+
+        <div class="senha-box">
+
+            <input
+                type="password"
+                id="senha"
+                placeholder="Digite a senha"
+                autocomplete="off"
+            >
+
+            <button onclick="verificarSenha()">
+                Abrir
+            </button>
+
+        </div>
+
+        <p id="mensagem"></p>
+
+        <a href="enigma.html" class="link-enigma">
+            Talvez a resposta esteja em algum lugar...
+        </a>
+
+    </div>
+
+    <script src="js/carta.js"></script>
+
+</body>
+</html>
