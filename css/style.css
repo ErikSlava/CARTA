@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Georgia, serif;
+
+    background:
+        radial-gradient(circle at center, #3a3028, #171310);
+
+    color: #eee4d2;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+
+    padding: 50px 35px;
+
+    text-align: center;
+
+    background: rgba(40, 32, 27, 0.9);
+
+    border: 1px solid #806b55;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 0 40px rgba(0, 0, 0, 0.6);
+
+    animation: aparecer 1.2s ease;
+}
+
+.cadeado {
+    font-size: 60px;
+    margin-bottom: 20px;
+
+    animation: flutuar 3s ease-in-out infinite;
+}
+
+h1 {
+    margin-bottom: 15px;
+}
+
+.descricao {
+    color: #bcae9c;
+    margin-bottom: 35px;
+}
+
+.senha-box {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+
+    padding: 14px;
+
+    border: 1px solid #806b55;
+    border-radius: 8px;
+
+    background: #211b17;
+    color: white;
+
+    outline: none;
+}
+
+button {
+    padding: 14px 20px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #806b55;
+    color: white;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background: #a0876b;
+}
+
+#mensagem {
+    margin-top: 20px;
+    min-height: 20px;
+}
+
+.link-enigma {
+    display: block;
+
+    margin-top: 35px;
+
+    color: #c7a878;
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+.link-enigma:hover {
+    color: white;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes flutuar {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+@media (max-width: 500px) {
+
+    .senha-box {
+        flex-direction: column;
+    }
+
+}
