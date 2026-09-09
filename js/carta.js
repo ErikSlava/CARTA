@@ -1,0 +1,1 @@
+const senha = "HAPPY";
